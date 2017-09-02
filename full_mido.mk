@@ -28,3 +28,7 @@ PRODUCT_NAME := full_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Override some stuffs
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="mido"
