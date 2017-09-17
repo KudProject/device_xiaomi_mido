@@ -2,6 +2,10 @@
 # system.prop for mido
 #
 
+# ART
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+
 # Audio
 voice.playback.conc.disabled=true
 voice.record.conc.disabled=false
