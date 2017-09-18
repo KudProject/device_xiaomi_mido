@@ -2,7 +2,7 @@ AM_CPPFLAGS = -I./../inc \
 	      -I$(top_srcdir)/ipanat/inc
 
 AM_CPPFLAGS += -Wall -Wundef -Wno-trigraphs
-AM_CPPFLAGS += -g
+AM_CPPFLAGS += -g0
 
 ipanattest_SOURCES = ipa_nat_test000.c \
 		ipa_nat_test001.c \

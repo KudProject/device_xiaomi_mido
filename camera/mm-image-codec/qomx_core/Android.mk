@@ -8,7 +8,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_CFLAGS := -Werror \
-                   -g -O0
+                   -g0 -O0
 
 LOCAL_C_INCLUDES := frameworks/native/include/media/openmax \
                     $(LOCAL_PATH)/../qexif
