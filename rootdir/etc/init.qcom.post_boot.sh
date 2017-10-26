@@ -1267,7 +1267,7 @@ case "$target" in
                 echo "85 1401600:80" > /sys/devices/system/cpu/cpufreq/interactive/target_loads
                 echo 39000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
                 echo 40000 > /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
-                echo 652800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+                echo 307200 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
                 # re-enable thermal & BCL core_control now
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
