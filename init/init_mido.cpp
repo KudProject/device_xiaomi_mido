@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
+   Copyright (c) 2017, The LineageOS Project
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -33,6 +34,9 @@
 #include "property_service.h"
 #include "log.h"
 #include "util.h"
+
+namespace android {
+namespace init {
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -129,3 +133,6 @@ void vendor_load_properties()
     property_set("ro.hwui.text_large_cache_width", "2048");
     property_set("ro.hwui.text_large_cache_height", large_cache_height);
 }
+
+} // namespace init
+} // namespace android
