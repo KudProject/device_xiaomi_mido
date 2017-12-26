@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
+   Copyright (c) 2017, The LineageOS Project
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -29,10 +30,10 @@
 #include <stdlib.h>
 #include <sys/sysinfo.h>
 
+#include <android-base/logging.h>
+
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -40,6 +41,8 @@ char const *heapsize;
 char const *heapminfree;
 char const *heapmaxfree;
 char const *large_cache_height;
+
+using android::init::property_set;
 
 static void init_alarm_boot_properties()
 {
