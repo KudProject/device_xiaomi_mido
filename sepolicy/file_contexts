@@ -28,3 +28,11 @@
 
 # Camera
 /system/bin/mm-qcamera-daemon			u:object_r:mm-qcamerad_exec:s0
+
+# Debugfs files
+/sys/kernel/debug/rmt_storage(/.*)?             u:object_r:debugfs_rmt:s0
+/sys/kernel/debug/rpm_stats                     u:object_r:debugfs_rpm:s0
+/sys/kernel/debug/rpm_master_stats              u:object_r:debugfs_rpm:s0
+
+# Sysfs
+/sys/devices/virtual/timed_output/vibrator/vtg_level            u:object_r:sysfs_vibrator:s0
