@@ -630,12 +630,12 @@ etc/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 -etc/qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel.xml
 
 # Graphics firmware
-etc/firmware/a506_zap.b00
-etc/firmware/a506_zap.b01
-etc/firmware/a506_zap.b02
-etc/firmware/a506_zap.mdt
-etc/firmware/a530_pfp.fw
-etc/firmware/a530_pm4.fw
+vendor/firmware/a506_zap.b00
+vendor/firmware/a506_zap.b01
+vendor/firmware/a506_zap.b02
+vendor/firmware/a506_zap.mdt
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
 
 # Fingerprint
 bin/gx_fpd
