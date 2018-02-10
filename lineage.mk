@@ -25,5 +25,5 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="xiaomi/mido/mido:7.0/NRD90M/V9.0.5.0.NCFMIEI:user/release-keys" \
-    PRIVATE_BUILD_DESC="mido-user 7.0 NRD90M V9.0.5.0.NCFMIEI release-keys"
+    BUILD_FINGERPRINT="xiaomi/mido/mido:7.0/NRD90M/V9.2.2.0.NCFMIEK:user/release-keys" \
+    PRIVATE_BUILD_DESC="mido-user 7.0 NRD90M V9.2.2.0.NCFMIEK release-keys"
