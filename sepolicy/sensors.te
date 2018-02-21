@@ -1,1 +1,1 @@
-allow sensors property_socket:sock_file { write };
+allow sensors property_socket:sock_file write;
