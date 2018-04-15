@@ -87,7 +87,7 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+USE_CUSTOM_AUDIO_POLICY := 0
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bootloader
@@ -103,6 +103,12 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
+
+#CAF
+
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8960
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8960
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8960
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -218,8 +224,9 @@ TARGET_RIL_VARIANT := caf
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery/fstab.qcom
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+# include device/qcom/sepolicy/sepolicy.mk
+# BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#include vendor/xiaomi/sepolicy/sepolicy.mk
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
