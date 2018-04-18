@@ -36,6 +36,7 @@ namespace android {
 enum {
     kKeyAacCodecSpecificData = 'nacc' , // for native aac files
 
+#if 0
     kKeyRawCodecSpecificData = 'rcsd',  // raw data - added to support mmParser
     kKeyDivXVersion          = 'DivX',  // int32_t
     kKeyDivXDrm              = 'QDrm',  // void *
@@ -47,6 +48,7 @@ enum {
     kKeyWMAFormatTag         = 'fmtt',  // int64_t
     kKeyWMABitspersample     = 'bsps',  // int64_t
     kKeyWMAVirPktSize        = 'vpks',  // int64_t
+#endif
     kKeyWMAChannelMask       = 'chmk',  // int32_t
     kKeyVorbisData           = 'vdat',  // raw data
 
@@ -54,7 +56,7 @@ enum {
 
     kkeyAacFormatAdif        = 'adif',  // bool (int32_t)
     kKeyInterlace            = 'intL',  // bool (int32_t)
-    kkeyAacFormatLtp         = 'ltp ',
+    kkeyAacFormatLtp         = 'ltp',
 
 
     //DTS subtype
@@ -79,6 +81,7 @@ enum {
     kKeyUseSetBuffers        = 'setb', //bool (int32_t)
 };
 
+#if 0
 enum {
     kTypeDivXVer_3_11,
     kTypeDivXVer_4,
@@ -90,6 +93,7 @@ enum {
     kTypeWMAPro,
     kTypeWMALossLess,
 };
+#endif
 
 //This enum should be keep in sync with "enum Flags" in MediaExtractor.h in AOSP,
 //Value should reflect as last entry in the enum
@@ -98,8 +102,7 @@ enum {
 };
 
 enum {
-    USE_SET_BUFFERS = 0x1,
-    USE_AUDIO_BIG_BUFFERS = 0x2,
+    USE_SET_BUFFERS = 1,
 };
 }  // namespace android
 

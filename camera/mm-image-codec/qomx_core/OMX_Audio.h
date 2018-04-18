@@ -89,7 +89,6 @@ typedef enum OMX_AUDIO_CODINGTYPE {
     OMX_AUDIO_CodingWMA,         /**< Any variant of WMA encoded data */
     OMX_AUDIO_CodingRA,          /**< Any variant of RA encoded data */
     OMX_AUDIO_CodingMIDI,        /**< Any variant of MIDI encoded data */
-    OMX_AUDIO_CodingAC3,         /**< Any variant of AC3 encoded data */
     OMX_AUDIO_CodingKhronosExtensions = 0x6F000000, /**< Reserved region for introducing Khronos Standard Extensions */ 
     OMX_AUDIO_CodingVendorStartUnused = 0x7F000000, /**< Reserved region for introducing Vendor Extensions */
     OMX_AUDIO_CodingMax = 0x7FFFFFFF
@@ -362,15 +361,6 @@ typedef struct OMX_AUDIO_PARAM_WMATYPE {
     OMX_U16 nEncodeOptions;   /**< WMA Type-specific data */
     OMX_U32 nSuperBlockAlign; /**< WMA Type-specific data */
 } OMX_AUDIO_PARAM_WMATYPE;
-
-/** G711 params */
-typedef struct OMX_AUDIO_PARAM_G711TYPE {
-    OMX_U32 nSize;            /**< size of the structure in bytes */
-    OMX_VERSIONTYPE nVersion; /**< OMX specification version information */
-    OMX_U32 nPortIndex;       /**< port that this structure applies to */
-    OMX_U16 nChannels;        /**< Number of channels */
-    OMX_U32 nSamplingRate;    /**< Sampling rate of the source data */
-} OMX_AUDIO_PARAM_G711TYPE;
 
 /** 
  * RealAudio format

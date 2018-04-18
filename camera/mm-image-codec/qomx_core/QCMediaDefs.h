@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012 - 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012 - 2013, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -36,7 +36,6 @@ namespace android {
 
 extern const char *MEDIA_MIMETYPE_AUDIO_EVRC;
 extern const char *MEDIA_MIMETYPE_VIDEO_WMV;
-extern const char *MEDIA_MIMETYPE_VIDEO_WMV_VC1;
 extern const char *MEDIA_MIMETYPE_AUDIO_WMA;
 extern const char *MEDIA_MIMETYPE_AUDIO_WMA_PRO;
 extern const char *MEDIA_MIMETYPE_AUDIO_WMA_LOSSLESS;
@@ -57,6 +56,7 @@ extern const char *MEDIA_MIMETYPE_AUDIO_AIFF;
 extern const char *MEDIA_MIMETYPE_AUDIO_ALAC;
 extern const char *MEDIA_MIMETYPE_AUDIO_APE;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCMPEG2TS;
+extern const char *MEDIA_MIMETYPE_VIDEO_HEVC;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCMPEG;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCAMR_NB;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCAMR_WB;
@@ -67,8 +67,6 @@ extern const char *MEDIA_MIMETYPE_CONTAINER_QCMPEG4;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCMATROSKA;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QCOGG;
 extern const char *MEDIA_MIMETYPE_CONTAINER_QTIFLAC;
-extern const char *MEDIA_MIMETYPE_VIDEO_VPX; //backward compatibility
-extern const char *MEDIA_MIMETYPE_AUDIO_EAC3_JOC;
 }  // namespace android
 
 #endif  //QC_MEDIA_DEFS_H_
