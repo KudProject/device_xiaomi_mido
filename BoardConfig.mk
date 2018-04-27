@@ -186,6 +186,12 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
+# liblight
+TARGET_PROVIDES_LIBLIGHT := true
+
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO 
+
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
