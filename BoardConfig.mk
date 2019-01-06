@@ -21,6 +21,9 @@ TARGET_KERNEL_VERSION := 3.18
 
 DEVICE_PATH := device/xiaomi/mido
 
+# Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
