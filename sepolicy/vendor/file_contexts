@@ -2,7 +2,7 @@
 /dev/block/mmcblk0p26				u:object_r:persist_block_device:s0
 
 # Glove Mode
-/sys/class/tp_glove/tp_glove/glove_enable	u:object_r:proc_touchpanel:s0
+/sys/devices/virtual/tp_glove/device/glove_enable	u:object_r:proc_touchpanel:s0
 
 # Goodix Fingerprint
 /(vendor|system/vendor)/bin/gx_fpd		u:object_r:gx_fpd_exec:s0
