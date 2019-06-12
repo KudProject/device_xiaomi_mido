@@ -5,13 +5,12 @@ include $(CLEAR_VARS)
 
 LOCAL_HEADER_LIBRARIES := libutils_headers
 LOCAL_HEADER_LIBRARIES += media_plugin_headers
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 LOCAL_32_BIT_ONLY := $(BOARD_QTI_CAMERA_32BIT_ONLY)
 LOCAL_CFLAGS+= -D_ANDROID_ -DQCAMERA_REDEFINE_LOG
 
 LOCAL_CFLAGS += -Wall -Wextra -Wno-unused-parameter
-
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LIB2D_ROTATION=false
 

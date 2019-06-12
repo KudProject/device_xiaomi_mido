@@ -40,10 +40,9 @@ LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/../stack/common \
     $(LOCAL_PATH)/../stack/mm-camera-interface/inc \
     frameworks/av/include/media/stagefright \
-    frameworks/native/include/media/openmax \
-    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+    frameworks/native/include/media/openmax
 
-LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_MODULE:= camera_test
 LOCAL_MODULE_TAGS:= tests
