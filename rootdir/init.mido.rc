@@ -27,8 +27,8 @@
 
 on boot
     # Glove Mode
-    chown system system /sys/class/tp_glove/device/glove_enable
-    chmod 0660 /sys/class/tp_glove/device/glove_enable
+    chown system system /sys/devices/virtual/tp_glove/device/glove_enable
+    chmod 0660 /sys/devices/virtual/tp_glove/device/glove_enable
 
 service goodix_script /vendor/bin/init.goodix.sh
     class late_start
