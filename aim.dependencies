@@ -1,5 +1,9 @@
 [
   {
+    "repository": "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  },
+  {
     "repository": "KudProject/kernel_xiaomi_msm8953-4.9",
     "target_path": "kernel/xiaomi/msm8953-4.9"
   },
