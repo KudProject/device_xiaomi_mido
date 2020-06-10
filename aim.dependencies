@@ -8,9 +8,9 @@
     "target_path": "kernel/xiaomi/msm8953-4.9"
   },
   {
-    "repository": "KudProject/prebuilts_clang_host_linux-x86",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-r383902",
-    "revision": "r383902"
+    "repository": "ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86",
+    "target_path": "vendor/qcom/sdclang-8.0/linux-x86",
+    "revision": "quartz"
   },
   {
     "repository": "KudProject/proprietary_vendor_xiaomi",
